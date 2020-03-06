@@ -23,6 +23,10 @@ body {
   font-family: 'Museo Sans 300 Light', Helvetica, sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 .main-container {
   position: relative;
   width: 100%;
@@ -51,7 +55,7 @@ body {
 }
 
 .menuButton__wrap:hover .navigate {
-  right: 70px;
+  right: 65px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -99,6 +103,46 @@ body {
           transform: rotate(0deg);
 }
 
+.burgerActive {
+  position: relative;
+  display: block;
+  background: 0 0;
+  margin: 0;
+  padding: 0;
+}
+
+.burgerActive::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5px;
+  display: block;
+  width: 40px;
+  height: 1px;
+  z-index: 30000;
+  background: #fff;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.burgerActive::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5px;
+  display: block;
+  width: 40px;
+  height: 1px;
+  z-index: 30000;
+  background: #fff;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .navigate {
   position: absolute;
   display: block;
@@ -115,11 +159,95 @@ body {
   transition: all .4s ease;
 }
 
+.modalMenu {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(248, 121, 4, 0.9);
+  z-index: 20000;
+}
+
+.modalMenu__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalMenu-wrapList {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.modalMenu-wrapList__borderBottom {
+  width: 300px;
+  position: relative;
+  border: none;
+  height: 1px;
+  margin: 15px auto 0;
+  padding: 0;
+  background: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(55%, white), to(white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 55%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=1);
+  opacity: .3;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.modalMenu-wrapList__item {
+  font-size: 5rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modalMenu-wrapList__item:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.modalMenu-wrapList__item:hover .modalMenu-wrapList__borderBottom {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.modalMenu-wrapList__link {
+  color: white;
+}
+
+.modalMenu-wrapList__link:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .content {
   position: relative;
-  z-index: 20000;
-  height: 10000px;
+  z-index: 2000;
+  height: 2000px;
   background-color: #aeaeae;
+}
+
+.scrollHide {
+  overflow: hidden;
 }
 
 .intro {
@@ -149,20 +277,42 @@ body {
 }
 
 .intro-title {
-  font-size: 10rem;
-  text-align: center;
+  font-size: 7rem;
   color: white;
+}
+
+.intro-title__line {
+  display: inline-block;
+  position: relative;
+  padding: 0 30px 4px 12px;
+}
+
+.intro-title__line::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ff8a00;
+  opacity: .7;
+}
+
+.intro-title__text {
+  position: relative;
+  z-index: 3;
 }
 
 .intro__title {
   margin: 0 auto;
-  max-width: 80vw;
+  max-width: 70vw;
 }
 
-.intro-arrowDown {
+.intro-arrowDown-fromContent {
   position: absolute;
   right: 50%;
-  bottom: 30px;
+  top: -50px;
   text-align: center;
   width: 4rem;
 }

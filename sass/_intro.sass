@@ -15,15 +15,31 @@
     &__img
       max-width: 100%
   &-title
-    font-size: 10rem
-    text-align: center
+    font-size: 7rem
     color: white
+    &__line
+      display: inline-block
+      position: relative
+      padding: 0 30px 4px 12px
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: #ff8a00
+        opacity: .7
+    &__text
+      position: relative
+      z-index: 3
   &__title
     margin: 0 auto
-    max-width: 80vw
-  &-arrowDown
+    max-width: 70vw
+  &-arrowDown-fromContent
     position: absolute
     right: 50%
-    bottom: 30px
+    top: -50px
     text-align: center
     width: 4rem
