@@ -35,11 +35,13 @@ body::-webkit-scrollbar {
 .menuButton {
   position: relative;
   float: right;
-  background: #F87904;
+  background: rgba(248, 121, 4, 0.9);
   padding: 25px 20px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin: 0 0 30px 30px;
   cursor: pointer;
   -webkit-transition: all .4s ease;
@@ -50,12 +52,17 @@ body::-webkit-scrollbar {
 .menuButton__wrap {
   position: fixed;
   right: 0;
-  top: 45px;
+  top: 75px;
   z-index: 30000;
 }
 
+.menuButton__wrap:hover .menuButton {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .menuButton__wrap:hover .navigate {
-  right: 65px;
+  right: 70px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -146,7 +153,7 @@ body::-webkit-scrollbar {
 .navigate {
   position: absolute;
   display: block;
-  background: #F87904;
+  background: rgba(248, 121, 4, 0.9);
   padding: 0 15px;
   height: 53px;
   line-height: 51px;
@@ -155,6 +162,8 @@ body::-webkit-scrollbar {
   font-size: 1em;
   color: #fff;
   border: 1px solid #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -184,7 +193,7 @@ body::-webkit-scrollbar {
 }
 
 .modalMenu-wrapList {
-  width: 30%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +223,8 @@ body::-webkit-scrollbar {
 }
 
 .modalMenu-wrapList__item {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: 400;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -269,7 +279,6 @@ body::-webkit-scrollbar {
 
 .intro-logo {
   margin-left: 5rem;
-  margin-bottom: 10rem;
 }
 
 .intro-logo__img {
@@ -277,43 +286,120 @@ body::-webkit-scrollbar {
 }
 
 .intro-title {
-  font-size: 7rem;
+  position: relative;
+  top: 20%;
+  text-align: center;
   color: white;
 }
 
-.intro-title__line {
-  display: inline-block;
-  position: relative;
-  padding: 0 30px 4px 12px;
-}
-
-.intro-title__line::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #ff8a00;
-  opacity: .7;
-}
-
 .intro-title__text {
-  position: relative;
-  z-index: 3;
+  display: inline;
+  padding: 7px;
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 110px;
+  letter-spacing: 10px;
+  background-color: rgba(248, 121, 4, 0.7);
 }
 
 .intro__title {
+  width: 90%;
   margin: 0 auto;
-  max-width: 70vw;
+}
+
+.intro-subtitle {
+  position: relative;
+  top: 30%;
+  color: white;
+  text-align: right;
+}
+
+.intro__subtitle {
+  float: right;
+  max-width: 700px;
+  margin-right: 300px;
 }
 
 .intro-arrowDown-fromContent {
   position: absolute;
   right: 50%;
-  top: -50px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  top: -100px;
   text-align: center;
   width: 4rem;
+}
+
+@media (max-width: 1232px) {
+  .intro-title__text {
+    font-size: 6rem;
+    line-height: 86px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro__title {
+    width: 80%;
+  }
+  .intro-title__text {
+    font-size: 4rem;
+    line-height: 62px;
+  }
+  .modalMenu-wrapList {
+    width: 60%;
+  }
+  .modalMenu-wrapList__borderBottom {
+    width: 250px;
+    margin: 10px auto;
+  }
+  .modalMenu-wrapList__item {
+    font-size: 2rem;
+  }
+  .modalMenu-wrapList__item:hover {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  .modalMenu-wrapList__item:hover .modalMenu-wrapList__borderBottom {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+@media (max-width: 590px) {
+  .menuButton {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .menuButton__wrap {
+    top: 50px;
+  }
+  .menuButton__wrap:hover .menuButton {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .navigate {
+    display: none;
+  }
+  .intro-logo {
+    width: 170px;
+    margin-left: 1rem;
+  }
+  .intro__title {
+    width: 95%;
+  }
+  .intro-title__text {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  .intro-arrowDown-fromContent {
+    top: -50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro-title__text {
+    font-size: 2rem;
+    line-height: 38px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

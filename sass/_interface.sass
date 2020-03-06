@@ -11,11 +11,13 @@ body
 .menuButton
   position: relative
   float: right
-  background: $active-color
+  background: rgba($active-color, 0.9)
   padding: 25px 20px
   border-top: 1px solid #fff
   border-bottom: 1px solid #fff
   border-left: 1px solid #fff
+  border-top-left-radius: 10px
+  border-bottom-left-radius: 10px
   margin: 0 0 30px 30px
   cursor: pointer
   transition: all .4s ease
@@ -23,11 +25,15 @@ body
   &__wrap
     position: fixed
     right: 0
-    top: 45px
+    top: 75px
     z-index: 30000
-    &:hover .navigate
-      right: 65px
-      transition: all .4s ease
+    &:hover 
+      .menuButton
+        border-top-left-radius: 0px
+        border-bottom-left-radius: 0px
+      .navigate
+        right: 70px
+        transition: all .4s ease
 .burger
   position: relative
   display: block
@@ -93,7 +99,7 @@ body
 .navigate
   position: absolute
   display: block
-  background: $active-color
+  background: rgba($active-color, 0.9)
   padding: 0 15px
   height: 53px
   line-height: 51px
@@ -102,6 +108,8 @@ body
   font-size: 1em
   color: #fff
   border: 1px solid #fff
+  border-top-left-radius: 20px
+  border-bottom-left-radius: 20px
   transition: all .4s ease
 .modalMenu
   position: fixed
@@ -118,7 +126,7 @@ body
     justify-content: center
     align-items: center
   &-wrapList
-    width: 30%
+    width: 40%
     display: flex
     flex-direction: column
     text-align: center
@@ -136,7 +144,8 @@ body
       transform: translateX(-50px)
       transition: all .4s ease
     &__item
-      font-size: 5rem
+      font-size: 4rem
+      font-weight: 400
       text-transform: uppercase
       transition: all 0.3s
       &:hover
