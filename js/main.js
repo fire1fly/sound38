@@ -6,19 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
     },
     autoplay: {
-      delay: 10000,
+      delay: 5000,
       disableOnInteraction: false,
     },
-  });
-
-  var rellax = new Rellax('.rellax', {
-    breakpoints: [576, 991, 1201]
   });
 
   $('.menuButton').on('click', () => {
     $('.modalMenu').fadeToggle(400);
     $('body').toggleClass('scrollHide')
     $('.burger').toggleClass('burgerActive')
+  });
+
+  $('.portfolio__btn').on('click', () => {
+    $('.portfolio_moreDisplay').slideToggle(1000);
+    $('.portfolio__btn').toggleClass('portfolio__btnHide')
   });
   
 });

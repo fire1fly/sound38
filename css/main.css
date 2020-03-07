@@ -23,10 +23,6 @@ body {
   font-family: 'Museo Sans 300 Light', Helvetica, sans-serif;
 }
 
-body::-webkit-scrollbar {
-  width: 0 !important;
-}
-
 .main-container {
   position: relative;
   width: 100%;
@@ -40,7 +36,7 @@ body::-webkit-scrollbar {
 }
 
 .section-container__descHeight {
-  height: 2000px;
+  height: 1800px;
 }
 
 .menuButton {
@@ -266,15 +262,11 @@ body::-webkit-scrollbar {
   font-size: 2.5rem;
   text-transform: uppercase;
   background: transparent;
-  border: 1px solid white;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
 .main-btn:hover {
-  border-color: transparent;
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
   text-decoration: underline;
 }
 
@@ -410,7 +402,14 @@ body::-webkit-scrollbar {
 
 .desc-block__btn {
   margin-top: 1rem;
+  border-color: transparent;
+  border: 1px solid white;
   color: #2D373C;
+}
+
+.desc-block__btn:hover {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .desc-block__titleRight {
@@ -492,6 +491,115 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.portfolio-title {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: #2D373C;
+}
+
+.portfolio__block {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-block-item {
+  position: relative;
+  width: 340px;
+  height: 220px;
+  margin: 15px;
+  text-align: center;
+  -webkit-box-shadow: 7px 9px 23px -5px rgba(45, 55, 60, 0.73);
+          box-shadow: 7px 9px 23px -5px rgba(45, 55, 60, 0.73);
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.portfolio-block-item__thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-block-item__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.portfolio-block-item__title, .portfolio-block-item__subtitle {
+  display: block;
+}
+
+.portfolio-block-item__title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.portfolio-block-item__subtitle {
+  font-size: 1.6rem;
+  font-family: georgia,serif;
+}
+
+.portfolio-block-item:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 7px 19px 23px -5px rgba(45, 55, 60, 0.73);
+          box-shadow: 7px 19px 23px -5px rgba(45, 55, 60, 0.73);
+}
+
+.portfolio-block-item:hover .portfolio-block-item__cover {
+  opacity: 1;
+}
+
+.portfolio__btn {
+  display: block;
+  margin: 3rem auto 0;
+  border: 1px solid #F87904;
+}
+
+.portfolio__btn:hover {
+  border-color: #fdae65;
+}
+
+.portfolio_moreDisplay, .portfolio__btnHide {
+  display: none;
+}
+
+.portfolio_mobile {
+  display: none;
+}
+
 @media (max-width: 1232px) {
   .intro-title__text {
     font-size: 6rem;
@@ -504,12 +612,16 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 991px) {
+  .section-container__descHeight {
+    height: 900px;
+  }
   .desc-img, .desc-img4, .desc-img5, .desc-img6, .desc-img__left {
     display: none;
   }
   .desc-block__btn {
+    margin: 10px auto;
     display: block;
-    margin: 20px auto 0;
+    width: 200px;
   }
   .desc-block__btn:hover {
     -webkit-transform: translateX(0px);
@@ -517,6 +629,7 @@ body::-webkit-scrollbar {
   }
   .desc-block__right {
     position: relative;
+    top: -100px;
     margin: 0 auto;
     text-align: center;
   }
@@ -586,6 +699,9 @@ body::-webkit-scrollbar {
     padding-right: 15px;
     padding-left: 15px;
   }
+  .section-container__descHeight {
+    height: 1300px;
+  }
   .desc-block {
     margin: 0 auto;
   }
@@ -613,6 +729,9 @@ body::-webkit-scrollbar {
     max-width: 400px;
     width: 100%;
   }
+  .portfolio-title {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 425px) {
@@ -625,6 +744,9 @@ body::-webkit-scrollbar {
   }
   .desc-block {
     max-width: 300px;
+  }
+  .portfolio__btn {
+    width: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */

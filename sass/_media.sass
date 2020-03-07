@@ -10,19 +10,26 @@
         left: 0
         width: 450px
 @media ( max-width: 991px )
+  .section-container
+    &__descHeight
+      height: 900px
   .desc
+    &-row
     &-img, &-img4, &-img5, &-img6, &-img__left
       display: none
     &-block
       &__btn
+        margin: 10px auto
         display: block
-        margin: 20px auto 0
+        width: 200px
         &:hover
           transform: translateX(0px)
       &__right
         position: relative
+        top: -100px
         margin: 0 auto
         text-align: center
+  
 @media ( max-width: 767px )
   .intro
     &__title
@@ -70,6 +77,8 @@
   .section-container
     padding-right: 15px
     padding-left: 15px
+    &__descHeight
+      height: 1300px
   .desc
     &-block
       margin: 0 auto
@@ -92,6 +101,9 @@
         margin-bottom: 2rem
         max-width: 400px
         width: 100%
+  .portfolio
+    &-title
+      font-size: 3rem
 @media ( max-width: 425px )
   .section-container
     padding: 5px
@@ -103,6 +115,9 @@
   .desc
     &-block
       max-width: 300px
+  .portfolio
+    &__btn
+      width: 200px
   
   
 
