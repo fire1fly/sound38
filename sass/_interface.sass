@@ -8,6 +8,13 @@ body
 .main-container
   position: relative
   width: 100%
+.section-container
+  max-width: 1200px
+  margin: 0 auto
+  padding-right: 30px
+  padding-left: 30px
+  &__descHeight
+    height: 2000px
 .menuButton
   position: relative
   float: right
@@ -157,10 +164,25 @@ body
       &:hover
         color: white
         text-decoration: none
+.main-btn
+  width: 250px
+  padding: 10px 0
+  font-size: 2.5rem
+  text-transform: uppercase
+  background: transparent
+  border: 1px solid white
+  transition: all 0.4s
+  &:hover
+    border-color: transparent
+    transform: translateX(30px)
+    text-decoration: underline
+  &:focus
+    outline: none
 .content
   position: relative
+  padding-top: 200px
+  // height: 2000px
+  background-color: white
   z-index: 2000
-  height: 2000px
-  background-color: #aeaeae
 .scrollHide
   overflow: hidden

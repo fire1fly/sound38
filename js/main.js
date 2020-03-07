@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  var rellax = new Rellax('.rellax');
+  var rellax = new Rellax('.rellax', {
+    breakpoints: [576, 991, 1201]
+  });
 
   $('.menuButton').on('click', () => {
     $('.modalMenu').fadeToggle(400);

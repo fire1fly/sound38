@@ -4,6 +4,25 @@
       &__text
         font-size: 6rem
         line-height: 86px
+  .desc
+    &-img
+      &__left
+        left: 0
+        width: 450px
+@media ( max-width: 991px )
+  .desc
+    &-img, &-img4, &-img5, &-img6, &-img__left
+      display: none
+    &-block
+      &__btn
+        display: block
+        margin: 20px auto 0
+        &:hover
+          transform: translateX(0px)
+      &__right
+        position: relative
+        margin: 0 auto
+        text-align: center
 @media ( max-width: 767px )
   .intro
     &__title
@@ -47,12 +66,43 @@
         line-height: 50px
     &-arrowDown-fromContent
       top: -50px
+@media ( max-width: 500px )
+  .section-container
+    padding-right: 15px
+    padding-left: 15px
+  .desc
+    &-block
+      margin: 0 auto
+      &__title, &__titleRight
+        font-size: 3rem
+      &__text
+        margin: 0 auto
+        max-width: 300px
+        font-size: 1.4rem
+      &__lineDark
+        right: 38px
+    &-img-mobile
+      position: relative
+      top: -100px
+      display: block
+      margin: 0 auto
+      text-align: center
+      &__img1
+        display: block
+        margin-bottom: 2rem
+        max-width: 400px
+        width: 100%
 @media ( max-width: 425px )
+  .section-container
+    padding: 5px
   .intro
     &-title
       &__text
         font-size: 2rem
         line-height: 38px
+  .desc
+    &-block
+      max-width: 300px
   
   
 
