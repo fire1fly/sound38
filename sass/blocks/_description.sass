@@ -3,12 +3,14 @@
     position: relative
     display: flex
     margin-bottom: 4rem
+    &_height 
+      height: 500px
   &-block
     position: relative
     z-index: 2001
-    top: -120px
+    top: 0
     max-width: 500px
-    background-color: rgba($active-color, 0.8)
+    background-color: rgba($active-color, 0.9)
     padding: 30px
     box-shadow: -20px 30px 56px -20px #999
     &__line
@@ -31,6 +33,11 @@
       font-family: georgia,serif
       font-style: italic
       color: $general-color
+      &_right
+        max-width: 500px
+        font-size: 1.6rem
+        font-family: georgia,serif
+        font-style: italic
     &__btn
       margin-top: 1rem
       border-color: transparent
@@ -38,13 +45,18 @@
       color: $general-color
       &:hover
         transform: translateX(30px)
+    &__right
+      position: absolute
+      top: 0
+      right: 0
+      max-width: 500px
+      text-align: right
+      color: $general-color
     &__titleRight
-      max-width: 400px
       font-size: 4.5rem
       text-transform: uppercase
       font-weight: 300
       letter-spacing: 6px
-      color: $general-color
     &__lineDark
       width: 150px
       position: absolute
@@ -54,38 +66,52 @@
       background-color: $general-color
   &-img
     position: absolute
+    top: 50px
     right: 30px
     flex-grow: 1
     width: 700px
     transform: translateX(-30px)
     box-shadow: 38px 41px 48px -22px #999
+    transition: all .6s
+    &:hover
+      z-index: 2002
+      width: 900px
     &__image
       max-width: 100%
-  &-img4
+  &-img3
     position: absolute
-    top: 30px
-    left: 30px
-    width: 300px
+    top: -130px
+    right: 0
+    width: 500px
+    transition: all .6s
+    &:hover
+      z-index: 2002
+      width: 900px
     &__image
       max-width: 100%
   &-img5
     position: absolute
-    top: -330px
-    right: 0
-    box-shadow: 38px 41px 48px -22px #999
+    width: 500px
+    top: 0
+    left: 200
+    box-shadow: -55px 45px 76px -22px #999
+    transition: all .6s
+    &:hover
+      z-index: 2002
+      width: 800px
   &-img6
     position: absolute
-    top: 200px
+    top: 0
     width: 600px
     box-shadow: -20px 30px 56px -20px #999
   &-img__left
     position: relative
-    top: -140px
-    left: 100px
+    top: 0
     width: 600px
-  &-block__right
-    position: absolute
-    top: 150px
-    right: 0
+    box-shadow: 38px 41px 48px -22px #999
+    transition: all .6s
+    &:hover
+      z-index: 2002
+      width: 900px
 .desc-img-mobile
   display: none

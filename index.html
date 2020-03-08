@@ -50,7 +50,7 @@
       </div>
       <div class="section-container section-container__descHeight">
         <div class="desc-row">
-          <div class="desc-block rellax" data-rellax-speed="-0.7" data-rellax-mobile-speed="0">
+          <div class="desc-block">
             <div class="desc-block__inner">
               <div class="desc-block__line"></div>
               <h2 class="desc-block__title">Sound 38</h2>
@@ -60,41 +60,42 @@
               <button class="desc-block__btn main-btn">Подробнее</button>
             </div>
           </div>
-          <div class="desc-img rellax" data-rellax-speed="0.5">
+          <div class="desc-img">
             <img class="desc-img__image" src="img/description/1.jpg" alt="DJ пульт">
           </div>
         </div><!-- /.desc-row -->
         <div class="desc-row">
-          <div class="desc-img__left rellax" data-rellax-speed="-0.5">
-            <img class="desc-img__image" src="img/description/3.jpg" alt="Оборудование колонка">
+          <div class="desc-img__left">
+            <img class="desc-img__image" src="img/description/2.jpg" alt="Оборудование колонка">
           </div>
-          <div class="desc-block__right rellax" data-rellax-speed="2.5" data-rellax-mobile-speed="0">
+          <div class="desc-block__right">
               <div class="desc-block__lineDark"></div>
               <h2 class="desc-block__titleRight">изготовление акустики</h2>
-              <p class="desc-block__text">Мы ориентируемся, прежде всего, на изготовление акустических систем по индивидуальным проектам. Каждое наше изделие - это результат  математического моделирования, проектирования и качественной сборки.
+              <p class="desc-block__text_right">Мы ориентируемся, прежде всего, на изготовление акустических систем по индивидуальным проектам. Каждое наше изделие - это результат  математического моделирования, проектирования и качественной сборки.
               </p>
           </div>
         </div>
-        <div class="desc-row">
-          <div class="desc-img4 rellax" data-rellax-speed="2">
-            <img src="img/description/4.jpg" alt="Оборудование колонка" class="desc-img__image">
+        <div class="desc-row desc-row_height">
+          <div class="desc-img3">
+            <img src="img/description/3.jpg" alt="Оборудование колонка" class="desc-img__image">
           </div>
-          <div class="desc-img5 rellax">
+          <div class="desc-img5">
             <img src="img/description/5.jpg" alt="Настройка оборудования для праздника" class="desc-img__image">
           </div>
           <div class="desc-img6">
-            <img src="img/description/6.jpg" alt="Сателлиты" class="desc-img__image">
+            <!-- <img src="img/description/6.jpg" alt="Сателлиты" class="desc-img__image"> -->
           </div>
         </div>
         <div class="desc-img-mobile">
-          <img class="desc-img-mobile__img1" src="img/description/1.jpg" alt="DJ пульт">
-          <img class="desc-img-mobile__img1" src="img/description/5.jpg" alt="DJ пульт">
+          <img class="desc-img-mobile__img" src="img/description/1.jpg" alt="DJ пульт">
+          <img class="desc-img-mobile__img" src="img/description/2.jpg" alt="Праздник озвучивание озвучка">
+          <img class="desc-img-mobile__img" src="img/description/5.jpg" alt="DJ пульт">
         </div>
       </div><!-- /.section-container(desc) -->
       <div class="section-container">
         <h2 class="portfolio-title">Наше портфолио</h2>
         <div class="portfolio-block portfolio__block">
-          <div class="portfolio-block-item">
+          <div id="p1" class="portfolio-block-item trigger">
             <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/1.jpg" alt="Модный квартал">
             <div class="portfolio-block-item__cover">
               <div class="portfolio-block-item__coverInner">
@@ -103,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio-block-item">
+          <div id="p2" class="portfolio-block-item trigger">
             <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/2.jpg" alt="ИРГУПС. Озвучивание">
             <div class="portfolio-block-item__cover">
               <div class="portfolio-block-item__coverInner">
@@ -112,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio-block-item">
+          <div id="p3" class="portfolio-block-item trigger">
             <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/3.jpg" alt="Ресторан Париж">
             <div class="portfolio-block-item__cover">
               <div class="portfolio-block-item__coverInner">
@@ -121,7 +122,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio-block-item">
+          <div id="p4" class="portfolio-block-item trigger">
             <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/4.jpg" alt="СИБАВИАСТРОЙ">
             <div class="portfolio-block-item__cover">
               <div class="portfolio-block-item__coverInner">
@@ -130,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio-block-item">
+          <div id="p5" class="portfolio-block-item trigger">
             <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/5.jpg" alt="СИБАВИАСТРОЙ">
             <div class="portfolio-block-item__cover">
               <div class="portfolio-block-item__coverInner">
@@ -139,7 +140,7 @@
               </div>
             </div>
           </div>
-          <div class="portfolio-block-item">
+          <div id="p6" class="portfolio-block-item trigger">
             <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/6.jpg" alt="СИБАВИАСТРОЙ">
             <div class="portfolio-block-item__cover">
               <div class="portfolio-block-item__coverInner">
@@ -148,112 +149,108 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolio_moreDisplay">
-          <div class="portfolio-block portfolio__block">
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/7.jpg" alt="HARLEY DAVIDSON">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">HARLEY-DAVIDSON</span>
-                  <span class="portfolio-block-item__subtitle">Рекламная акция</span>
-                </div>
+          <div id="p7" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/7.jpg" alt="HARLEY DAVIDSON">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">HARLEY-DAVIDSON</span>
+                <span class="portfolio-block-item__subtitle">Рекламная акция</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/8min.jpg" alt="НХЛ. Озвучивание">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">НХЛ 2015</span>
-                  <span class="portfolio-block-item__subtitle">Озвучивание фуршета НХЛ 2015</span>
-                </div>
+          </div>
+          <div id="p8" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/8min.jpg" alt="НХЛ. Озвучивание">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">НХЛ 2015</span>
+                <span class="portfolio-block-item__subtitle">Озвучивание фуршета НХЛ 2015</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/9.jpg" alt="Сбербанк, sberbank">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">НОВОГОДНИЙ КОРПОРАТИВ</span>
-                  <span class="portfolio-block-item__subtitle">Сбербанк, 2014 год</span>
-                </div>
+          </div>
+          <div id="p9" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/9.jpg" alt="Сбербанк, sberbank">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">НОВОГОДНИЙ КОРПОРАТИВ</span>
+                <span class="portfolio-block-item__subtitle">Сбербанк, 2014 год</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/10.jpg" alt="Open Air.Истлэнд">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">OPEN AIR Истлэнд</span>
-                  <span class="portfolio-block-item__subtitle">Open Air, Горнолыжная база, Листвянка, 2014</span>
-                </div>
+          </div>
+          <div id="p10" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/10.jpg" alt="Open Air.Истлэнд">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">OPEN AIR Истлэнд</span>
+                <span class="portfolio-block-item__subtitle">Open Air, Горнолыжная база, Листвянка, 2014</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/11.jpg" alt="Корпоратив. Фармэконом">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">ФАРМЭКОНОМ</span>
-                  <span class="portfolio-block-item__subtitle">Корпоративный Open Air</span>
-                </div>
+          </div>
+          <div id="p11" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/11.jpg" alt="Корпоратив. Фармэконом">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">ФАРМЭКОНОМ</span>
+                <span class="portfolio-block-item__subtitle">Корпоративный Open Air</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/12.jpg" alt="John Deere">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">JOHN DEERE</span>
-                  <span class="portfolio-block-item__subtitle">Годовщина John Deere</span>
-                </div>
+          </div>
+          <div id="p12" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/12.jpg" alt="John Deere">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">JOHN DEERE</span>
+                <span class="portfolio-block-item__subtitle">Годовщина John Deere</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/13.jfif" alt="Киношкола. Озвучка">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">ОТЧЕТНОЕ ВЫСТУПЛЕНИЕ УЧАЩИХСЯ КИНОШКОЛЫ, ИРКУТСК</span>
-                </div>
+          </div>
+          <div id="p13" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/13.jfif" alt="Киношкола. Озвучка">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">ОТЧЕТНОЕ ВЫСТУПЛЕНИЕ УЧАЩИХСЯ КИНОШКОЛЫ, ИРКУТСК</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/14.jpg" alt="Озвучка свадьбы">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">Свадьба 2012</span>
-                  <span class="portfolio-block-item__subtitle">Свадьба. Отель Байкал, 2012</span>
-                </div>
+          </div>
+          <div id="p14" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/14.jpg" alt="Озвучка свадьбы">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">Свадьба 2012</span>
+                <span class="portfolio-block-item__subtitle">Свадьба. Отель Байкал, 2012</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/15.jpg" alt="Марафон, озвучка">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">ЗЕЛЕНЫЙ МАРАФОН</span>
-                  <span class="portfolio-block-item__subtitle">Сбербанк, Иркутск</span>
-                </div>
+          </div>
+          <div id="p15" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/15.jpg" alt="Марафон, озвучка">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">ЗЕЛЕНЫЙ МАРАФОН</span>
+                <span class="portfolio-block-item__subtitle">Сбербанк, Иркутск</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/16.jfif" alt="Озвучка свадьбы">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">Свадьба 2014</span>
-                  <span class="portfolio-block-item__subtitle">Свадьба, август 2014</span>
-                </div>
+          </div>
+          <div id="p16" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/16.jfif" alt="Озвучка свадьбы">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">Свадьба 2014</span>
+                <span class="portfolio-block-item__subtitle">Свадьба, август 2014</span>
               </div>
             </div>
-            <div class="portfolio-block-item">
-              <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/17.jpg" alt="Разное">
-              <div class="portfolio-block-item__cover">
-                <div class="portfolio-block-item__coverInner">
-                  <span class="portfolio-block-item__title">Разное</span>
-                  <span class="portfolio-block-item__subtitle">Фотографии других мероприятий</span>
-                </div>
+          </div>
+          <div id="p17" class="portfolio-block-item trigger">
+            <img class="portfolio-block-item__thumb" src="img/portfolio/thumb/17.jpg" alt="Разное">
+            <div class="portfolio-block-item__cover">
+              <div class="portfolio-block-item__coverInner">
+                <span class="portfolio-block-item__title">Разное</span>
+                <span class="portfolio-block-item__subtitle">Фотографии других мероприятий</span>
               </div>
             </div>
-          </div><!-- /.portfolio-block -->
-        </div>
-        <button class="main-btn portfolio__btn">Показать еще</button>
-        <button class="main-btn portfolio__btn portfolio__btnHide">Скрыть</button>
+          </div>
+        </div><!-- /.portfolio-block -->
       </div>
+      <button class="main-btn portfolio__btn">Показать еще</button>
+      <button class="main-btn portfolio__btn portfolio__btnHide">Скрыть</button>
     </div>
   </div>
   <div class="modalMenu">
@@ -278,6 +275,18 @@
       <div class="modalMenu-wrapList__item">
         <a href="#" class="modalMenu-wrapList__link">Контакты</a>
       </div>
+      </div>
+    </div>
+  </div>
+  <div class="modalPort">
+    <div class="modal">
+      <div class="modalPort-head">
+        <a class="btn-close trigger" href="#"><img src="img/portfolio/close.svg" alt="Закрыть"></a>
+      </div>
+      <h2 class="modalPort-title"></h2>
+      <span class="modalPort-subtitle"></span>
+      <div class="modalPort-content">
+        
       </div>
     </div>
   </div>

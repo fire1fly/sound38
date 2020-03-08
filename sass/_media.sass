@@ -5,31 +5,38 @@
         font-size: 6rem
         line-height: 86px
   .desc
-    &-img
-      &__left
-        left: 0
-        width: 450px
+    &-img__left
+      width: 470px
 @media ( max-width: 991px )
   .section-container
-    &__descHeight
-      height: 900px
   .desc
     &-row
-    &-img, &-img4, &-img5, &-img6, &-img__left
+      &_height
+        height: 200px
+    &-img, &-img3, &-img5, &-img6, &-img__left
       display: none
+    &-img-mobile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0 auto
+      text-align: center
+      &__img
+        margin-bottom: 2rem
+        max-width: 600px
+        width: 100%
     &-block
+      max-width: 600px
+      width: 100%
+      &__text
+        max-width: 600px
+        width: 100%
       &__btn
         margin: 10px auto
         display: block
         width: 200px
         &:hover
           transform: translateX(0px)
-      &__right
-        position: relative
-        top: -100px
-        margin: 0 auto
-        text-align: center
-  
 @media ( max-width: 767px )
   .intro
     &__title
@@ -50,6 +57,9 @@
           transform: translateX(0px)
         &:hover .modalMenu-wrapList__borderBottom
           transform: translateX(-50px)
+  .portfolio
+    &-block
+      height: 1000px
 @media ( max-width: 590px )
   .menuButton
     border-top-left-radius: 10px
@@ -77,30 +87,29 @@
   .section-container
     padding-right: 15px
     padding-left: 15px
-    &__descHeight
-      height: 1300px
   .desc
+    &-row
+      &_height
+        height: 0
+        margin: 0
     &-block
-      margin: 0 auto
       &__title, &__titleRight
         font-size: 3rem
       &__text
         margin: 0 auto
         max-width: 300px
         font-size: 1.4rem
+        &_right
+          max-width: 300px
+          font-size: 1.4rem
       &__lineDark
-        right: 38px
-    &-img-mobile
-      position: relative
-      top: -100px
-      display: block
-      margin: 0 auto
-      text-align: center
-      &__img1
-        display: block
-        margin-bottom: 2rem
-        max-width: 400px
-        width: 100%
+        top: -17px;
+        right: 68px;
+      &__right
+        position: relative
+        width: 300px
+        margin: 2rem auto
+        text-align: center
   .portfolio
     &-title
       font-size: 3rem
@@ -115,6 +124,10 @@
   .desc
     &-block
       max-width: 300px
+      margin: 0 auto
+      padding: 20px
+      &__titleRight
+        font-size: 2.5rem
   .portfolio
     &__btn
       width: 200px
