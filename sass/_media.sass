@@ -7,6 +7,10 @@
   .desc
     &-img__left
       width: 470px
+  .modal
+    margin-top: 5rem
+    width: 700px
+    transform: translateX(-90px)
 @media ( max-width: 991px )
   .section-container
   .desc
@@ -37,6 +41,14 @@
         width: 200px
         &:hover
           transform: translateX(0px)
+  .modal
+    width: 600px
+  .modalPort
+    &-content
+      justify-content: space-around
+      &__item
+        width: 250px
+        height: 170px
 @media ( max-width: 767px )
   .intro
     &__title
@@ -60,6 +72,16 @@
   .portfolio
     &-block
       height: 1000px
+  .modal
+    width: 550px
+    transform: translateX(-90px)
+  .modalPort
+    &-content
+      justify-content: space-around
+      &__item
+        width: 225px
+        height: 140px
+        
 @media ( max-width: 590px )
   .menuButton
     border-top-left-radius: 10px
@@ -83,6 +105,21 @@
         line-height: 50px
     &-arrowDown-fromContent
       top: -50px
+  .modal
+    margin-top: 1rem
+    width: 420px
+    transform: translateX(0px)
+  .modalPort
+    &-title
+      margin-bottom: 1rem
+    &-subtitle
+      display: block
+      margin-left: 1rem
+    &-content
+      height: 470px
+      &__item
+        width: 300px
+        height: 200px
 @media ( max-width: 500px )
   .section-container
     padding-right: 15px
@@ -113,6 +150,15 @@
   .portfolio
     &-title
       font-size: 3rem
+  .modal
+    width: 300px
+    height: auto
+  .modalPort
+    &-content
+      height: 420px
+      &__item
+        width: 200px
+        height: 120px
 @media ( max-width: 425px )
   .section-container
     padding: 5px
@@ -131,6 +177,17 @@
   .portfolio
     &__btn
       width: 200px
+@media ( max-width: 320px )
+  .modalPort
+    &-title
+      font-size: 1.6rem
+    &-subtitle
+      font-size: 1.4rem
+  .modal
+    height: 450px
+  
+
+
   
   
 
