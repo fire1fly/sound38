@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                       </div>`;
     } else if (id == '12') {
       modalPortTitle = 'Фестиваль ';
-        modalPortSubtitle = 'ТБ "Елочка"';
+        modalPortSubtitle = 'ТБ Елочка';
         modalPortContentImagesHTML= `<div class="modalPort-content__item">
                                         <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/1.jpg">
                                           <img src="img/portfolio/modal/${id}/1.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
