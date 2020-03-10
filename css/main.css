@@ -44,6 +44,14 @@ body::-webkit-scrollbar {
   padding-left: 30px;
 }
 
+.section-title {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 6px;
+  color: #2D373C;
+}
+
 .menuButton {
   position: relative;
   float: right;
@@ -325,9 +333,8 @@ body::-webkit-scrollbar {
 .intro-title__text {
   display: inline;
   padding: 7px;
-  font-size: 8rem;
+  font-size: 5.5rem;
   font-weight: 400;
-  line-height: 110px;
   letter-spacing: 10px;
   background-color: rgba(248, 121, 4, 0.7);
 }
@@ -517,14 +524,6 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-.portfolio-title {
-  font-size: 4.5rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 6px;
-  color: #2D373C;
-}
-
 .portfolio__block {
   max-width: 1200px;
   margin: 0 auto;
@@ -614,7 +613,7 @@ body::-webkit-scrollbar {
 
 .portfolio__btn {
   display: block;
-  margin: 3rem auto 0;
+  margin: 3rem auto 5rem;
   border: 1px solid #F87904;
 }
 
@@ -779,6 +778,123 @@ a.btn {
           transform: translateY(2px);
 }
 
+.offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer__title {
+  margin-bottom: 3rem;
+}
+
+.offer__card {
+  width: 150px;
+  margin: 0 2rem 2rem;
+}
+
+.offer__card-img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.offer__card-description {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.offer_mb {
+  margin-bottom: 5rem;
+}
+
+.rent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rent__title {
+  margin-bottom: 5rem;
+}
+
+.rent-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 51px 0px rgba(0, 0, 0, 0.26);
+          box-shadow: 1px 1px 51px 0px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.rent-card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 1px 1px 51px 20px rgba(0, 0, 0, 0.26);
+          box-shadow: 1px 1px 51px 20px rgba(0, 0, 0, 0.26);
+}
+
+.rent-card__wrap {
+  margin-bottom: 4rem;
+}
+
+.rent-card__img {
+  display: block;
+  width: 330px;
+  height: 340px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.rent-card__title {
+  display: inline-block;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #F87904;
+}
+
+.rent-card-text {
+  padding: 1rem 1rem 2rem;
+  font-size: 1.4rem;
+}
+
+.rent-card-text__titleList {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.rent-card-text__list {
+  padding-left: 3rem;
+}
+
+.rent-card-text__listItem {
+  margin-bottom: 0.2rem;
+}
+
+.rent-card-text__text {
+  font-size: 1.4rem;
+  line-height: 28px;
+}
+
+.rent-card-text__desc {
+  font-size: 1.6rem;
+}
+
+.rent-card-text strong {
+  color: #F87904;
+}
+
 @media (max-width: 1232px) {
   .intro-title__text {
     font-size: 6rem;
@@ -837,6 +953,21 @@ a.btn {
   .desc-block__btn:hover {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+  }
+  .rent {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .rent-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 330px;
+    height: 100%;
+  }
+  .rent-card__wrap {
+    margin: 0rem 2rem 4rem;
   }
   .modal {
     width: 600px;
@@ -977,7 +1108,7 @@ a.btn {
     margin: 2rem auto;
     text-align: center;
   }
-  .portfolio-title {
+  .section-title {
     font-size: 3rem;
   }
   .modal {
@@ -1011,6 +1142,32 @@ a.btn {
   }
   .portfolio__btn {
     width: 200px;
+  }
+  .rent__title {
+    font-size: 2rem;
+  }
+  .rent-card {
+    width: 300px;
+  }
+  .rent-card:hover {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-box-shadow: 1px 1px 51px 0px rgba(0, 0, 0, 0.26);
+            box-shadow: 1px 1px 51px 0px rgba(0, 0, 0, 0.26);
+  }
+  .rent-card__img {
+    width: 300px;
+    height: 310px;
+  }
+  .rent-card__title {
+    font-size: 2rem;
+  }
+  .rent-card-text__text {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  .rent-card-text__desc {
+    font-size: 1.2rem;
   }
 }
 

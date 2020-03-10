@@ -21,14 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  var rellax = new Rellax('.rellax', {
-    center: false,
-    wrapper: null,
-    round: true,
-    vertical: true,
-    horizontal: false
-  });
-
   const appendModalPortTitle = title => {
     const titleModalPort = document.createElement('h2');
     titleModalPort.className = 'modalPort-title';

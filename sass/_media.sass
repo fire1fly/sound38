@@ -12,7 +12,6 @@
     width: 700px
     transform: translateX(-90px)
 @media ( max-width: 991px )
-  .section-container
   .desc
     &-row
       &_height
@@ -41,6 +40,14 @@
         width: 200px
         &:hover
           transform: translateX(0px)
+  .rent
+    justify-content: space-around
+    &-card
+      flex-direction: column
+      width: 330px
+      height: 100%
+      &__wrap
+        margin: 0rem 2rem 4rem
   .modal
     width: 600px
   .modalPort
@@ -147,7 +154,7 @@
         width: 300px
         margin: 2rem auto
         text-align: center
-  .portfolio
+  .section
     &-title
       font-size: 3rem
   .modal
@@ -177,6 +184,25 @@
   .portfolio
     &__btn
       width: 200px
+  .rent
+    &__title
+      font-size: 2rem
+    &-card
+      width: 300px
+      &:hover
+        transform: translateY(0px)
+        box-shadow: 1px 1px 51px 0px rgba(0,0,0,0.26)
+      &__img
+        width: 300px
+        height: 310px
+      &__title
+        font-size: 2rem  
+      &-text
+        &__text
+          font-size: 1rem
+          line-height: 24px
+        &__desc
+          font-size: 1.2rem
 @media ( max-width: 320px )
   .modalPort
     &-title
