@@ -48,6 +48,11 @@
       height: 100%
       &__wrap
         margin: 0rem 2rem 4rem
+  .equip
+    justify-content: space-around
+    &-card
+      &__wrap
+        min-width: 300px
   .modal
     width: 600px
   .modalPort
@@ -128,9 +133,12 @@
         width: 300px
         height: 200px
 @media ( max-width: 500px )
-  .section-container
-    padding-right: 15px
-    padding-left: 15px
+  .section
+    &-container
+      padding-right: 15px
+      padding-left: 15px
+    &-title
+      font-size: 3rem
   .desc
     &-row
       &_height
@@ -154,9 +162,8 @@
         width: 300px
         margin: 2rem auto
         text-align: center
-  .section
-    &-title
-      font-size: 3rem
+  .equip
+    display: block
   .modal
     width: 300px
     height: auto
@@ -203,6 +210,9 @@
           line-height: 24px
         &__desc
           font-size: 1.2rem
+  .equip
+    &__title
+      font-size: 2rem
 @media ( max-width: 320px )
   .modalPort
     &-title

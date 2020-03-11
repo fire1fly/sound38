@@ -895,6 +895,44 @@ a.btn {
   color: #F87904;
 }
 
+.equip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.equip__title {
+  margin-bottom: 3rem;
+}
+
+.equip-card__wrap {
+  min-width: 340px;
+  width: 30%;
+  margin: 0rem 1rem 2rem;
+}
+
+.equip-card__title {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #F87904;
+}
+
+.equip-card-list {
+  padding: 0;
+  list-style: none;
+}
+
+.equip-card-list__item {
+  font-size: 1.6rem;
+  line-height: 30px;
+}
+
 @media (max-width: 1232px) {
   .intro-title__text {
     font-size: 6rem;
@@ -968,6 +1006,13 @@ a.btn {
   }
   .rent-card__wrap {
     margin: 0rem 2rem 4rem;
+  }
+  .equip {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .equip-card__wrap {
+    min-width: 300px;
   }
   .modal {
     width: 600px;
@@ -1082,6 +1127,9 @@ a.btn {
     padding-right: 15px;
     padding-left: 15px;
   }
+  .section-title {
+    font-size: 3rem;
+  }
   .desc-row_height {
     height: 0;
     margin: 0;
@@ -1108,8 +1156,8 @@ a.btn {
     margin: 2rem auto;
     text-align: center;
   }
-  .section-title {
-    font-size: 3rem;
+  .equip {
+    display: block;
   }
   .modal {
     width: 300px;
@@ -1168,6 +1216,9 @@ a.btn {
   }
   .rent-card-text__desc {
     font-size: 1.2rem;
+  }
+  .equip__title {
+    font-size: 2rem;
   }
 }
 
