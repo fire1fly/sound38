@@ -1,0 +1,62 @@
+.footer
+  margin-top: 60px
+  padding: 59px 0
+  color: white
+  background-color: #191819
+  &-block
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &__column
+      width: 30%
+      min-width: 300px
+  &-copy
+    font-size: 12px
+  &__title
+    display: block
+    margin-bottom: 3rem
+    max-width: 80%
+    font-size: 16px
+  a
+    color: white
+    text-decoration: none
+    &:hover
+      color: white
+      text-decoration: underline
+  &__menu
+    text-align: center
+    font-size: 1.6rem
+  ul
+    padding: 0
+    list-style: none
+    line-height: 32px
+  &-contacts
+    text-align: right
+    &__phone
+      a
+        font-size: 21px
+        +bold
+        color: $active-color
+        &:hover
+          color: lighten($active-color, 10%)
+    &__email
+      font-size: 2rem
+  &-social-links
+    @extend .footer-contacts
+    font-size: 2rem
+    li
+      display: inline-block
+      a
+        margin-left: 10px
+        width: 35px
+        height: 35px  
+        padding: 10px
+        text-align: center
+        color: white
+        background-color: rgba(white, 0.1)
+        border-radius: 50%
+        transition: all 0.2s
+        &:hover
+          background-color: rgba($active-color, 0.9)
+      &:last-child
+        margin-top: 20px

@@ -590,9 +590,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   $('.menuButton').on('click', () => {
     $('.modalMenu').fadeToggle(400);
-    $('body').toggleClass('scrollHide')
-    $('.burger').toggleClass('burgerActive')
+    $('body').toggleClass('scrollHide');
+    $('.burger').toggleClass('burgerActive');
   });
+
 
   $('.trigger').on('click', function(event) {
     event.preventDefault();
@@ -638,5 +639,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
+  $('.scrollTo').on('click', function(event) {
+    event.preventDefault();
+    $('.modalMenu').fadeOut(400);
+    $('.burger').removeClass('burgerActive');
+    $('body').removeClass('scrollHide');
+    let href = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 1000,   // по умолчанию «400» 
+        easing: "swing" // по умолчанию «swing» 
+    });
+    return false;
+  });
+
 });

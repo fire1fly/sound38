@@ -7,6 +7,10 @@
   .desc
     &-img__left
       width: 470px
+  .about
+    &-card
+      &-contacts
+        font-size: 2rem
   .modal
     margin-top: 5rem
     width: 700px
@@ -53,6 +57,28 @@
     &-card
       &__wrap
         min-width: 300px
+  .about
+    &-card
+      &-text
+        &_hide
+          display: none
+      &-contacts
+        font-size: 1.8rem
+        &__phone, &__mail
+          display: block
+          min-width: 200px
+          margin: 0rem 0rem 1rem
+  .footer
+    &-block
+      &_soundOrder
+        order: 4
+        padding-left: 3rem
+      &__column
+        margin-bottom: 2rem
+    &__title
+      max-width: 100%
+    &-contacts
+      text-align: center
   .modal
     width: 600px
   .modalPort
@@ -61,6 +87,7 @@
       &__item
         width: 250px
         height: 170px
+
 @media ( max-width: 767px )
   .intro
     &__title
@@ -84,6 +111,19 @@
   .portfolio
     &-block
       height: 1000px
+  .about
+    &-card
+      flex-direction: column
+      &-text
+        &_hide
+          display: block
+  .footer
+    &-block
+      &__column
+        margin-bottom: 4rem
+    &-contacts
+      a
+        font-size: 1.6rem
   .modal
     width: 550px
     transform: translateX(-90px)
@@ -213,6 +253,10 @@
   .equip
     &__title
       font-size: 2rem
+  .about
+    &-card
+      &__img
+        width: 280px
 @media ( max-width: 320px )
   .modalPort
     &-title
