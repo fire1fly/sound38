@@ -37,7 +37,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const portHandler = event => {
     let id = event.target.id;
-    if (id == '17') {
+    if (id == '18') {
+      modalPortTitle = 'Лыжня России 2020';
+      modalPortSubtitle = 'Озвучивание';
+      modalPortContentImagesHTML= `<div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/1.jpg">
+                                          <img src="img/portfolio/modal/${id}/1.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/2.jpg">
+                                          <img src="img/portfolio/modal/${id}/2.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/3.jpg">
+                                          <img src="img/portfolio/modal/${id}/3.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/4.jpg">
+                                          <img src="img/portfolio/modal/${id}/4.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/5.jpg">
+                                          <img src="img/portfolio/modal/${id}/5.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/6.jpg">
+                                          <img src="img/portfolio/modal/${id}/6.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/7.jpg">
+                                          <img src="img/portfolio/modal/${id}/7.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/8.jpg">
+                                          <img src="img/portfolio/modal/${id}/8.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/9.jpg">
+                                          <img src="img/portfolio/modal/${id}/9.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/10.jpg">
+                                          <img src="img/portfolio/modal/${id}/10.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/11.jpg">
+                                          <img src="img/portfolio/modal/${id}/11.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>
+                                      <div class="modalPort-content__item">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/12.jpg">
+                                          <img src="img/portfolio/modal/${id}/12.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        </a>
+                                      </div>`;
+    } else if (id == '17') {
         modalPortTitle = 'Масленица 2016 ';
         modalPortSubtitle = 'Модный квартал';
         modalPortContentImagesHTML= `<div class="modalPort-content__item">
@@ -262,12 +325,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/2.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/2.jpg">
                                           <img src="img/portfolio/modal/${id}/2.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/3.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/3.jpg">
                                           <img src="img/portfolio/modal/${id}/3.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
@@ -282,42 +345,42 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/6.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/6.jpg">
                                           <img src="img/portfolio/modal/${id}/6.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/7.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/7.jpg">
                                           <img src="img/portfolio/modal/${id}/7.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/8.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/8.jpg">
                                           <img src="img/portfolio/modal/${id}/8.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/9.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/9.jpg">
                                           <img src="img/portfolio/modal/${id}/9.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/10.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/10.jpg">
                                           <img src="img/portfolio/modal/${id}/10.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/11.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/11.jpg">
                                           <img src="img/portfolio/modal/${id}/11.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/12.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/12.jpg">
                                           <img src="img/portfolio/modal/${id}/12.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/13.jfif">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/13.jpg">
                                           <img src="img/portfolio/modal/${id}/13.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>`;
@@ -436,13 +499,13 @@ document.addEventListener('DOMContentLoaded', () => {
       modalPortTitle = 'Отчетное Выступление Учащихся Киношколы, Иркутск';
         modalPortSubtitle = '';
         modalPortContentImagesHTML= `<div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/1.jfif">
-                                          <img src="img/portfolio/modal/${id}/1.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/1.jpg">
+                                          <img src="img/portfolio/modal/${id}/1.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/2.jfif">
-                                          <img src="img/portfolio/modal/${id}/2.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/2.jpg">
+                                          <img src="img/portfolio/modal/${id}/2.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>`;
                                       
@@ -488,23 +551,23 @@ document.addEventListener('DOMContentLoaded', () => {
       modalPortTitle = 'Свадьба 2014 ';
         modalPortSubtitle = 'Свадьба, август 2014';
         modalPortContentImagesHTML= `<div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/1.jfif">
-                                          <img src="img/portfolio/modal/${id}/1.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/1.jpg">
+                                          <img src="img/portfolio/modal/${id}/1.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/2.jfif">
-                                          <img src="img/portfolio/modal/${id}/2.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/2.jpg">
+                                          <img src="img/portfolio/modal/${id}/2.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/3.jfif">
-                                          <img src="img/portfolio/modal/${id}/3.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/3.jpg">
+                                          <img src="img/portfolio/modal/${id}/3.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/4.jfif">
-                                          <img src="img/portfolio/modal/${id}/4.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/4.jpg">
+                                          <img src="img/portfolio/modal/${id}/4.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>`;
                                       
@@ -552,18 +615,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/10.jfif">
-                                          <img src="img/portfolio/modal/${id}/10.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/10.jpg">
+                                          <img src="img/portfolio/modal/${id}/10.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/11.jfif">
-                                          <img src="img/portfolio/modal/${id}/11.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/11.jpg">
+                                          <img src="img/portfolio/modal/${id}/11.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
-                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/12.jfif">
-                                          <img src="img/portfolio/modal/${id}/12.jfif" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
+                                        <a data-fancybox="port-gallery-${id}" href="img/portfolio/full/${id}/12.jpg">
+                                          <img src="img/portfolio/modal/${id}/12.jpg" class="modalPort-content__img" alt="${modalPortTitle + modalPortSubtitle}">
                                         </a>
                                       </div>
                                       <div class="modalPort-content__item">
@@ -633,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
           $('.portfolio-block').css('height', '1000px');
           $('.portfolio__btn').toggleClass('portfolio__btnHide');
         } else {
-          $('.portfolio-block').css('height', '4300px');
+          $('.portfolio-block').css('height', '4500px');
           $('.portfolio__btn').toggleClass('portfolio__btnHide');
         }
     }

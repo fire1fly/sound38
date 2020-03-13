@@ -495,7 +495,6 @@ body::-webkit-scrollbar {
   position: absolute;
   width: 500px;
   top: 0;
-  left: 200;
   -webkit-box-shadow: -55px 45px 76px -22px #999;
           box-shadow: -55px 45px 76px -22px #999;
 }
