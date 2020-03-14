@@ -290,6 +290,7 @@ body::-webkit-scrollbar {
 .promo {
   margin: 3rem auto;
   width: 850px;
+  height: 450px;
 }
 
 .content {
@@ -1158,6 +1159,7 @@ a.btn {
 @media (max-width: 991px) {
   .promo {
     width: 640px;
+    height: 360px;
   }
   .desc-row_height {
     height: 200px;
@@ -1290,6 +1292,7 @@ a.btn {
   }
   .promo {
     width: 500px;
+    height: 280px;
   }
   .portfolio-block {
     height: 1000px;
@@ -1358,6 +1361,7 @@ a.btn {
   }
   .promo {
     width: 90%;
+    height: 230px;
   }
   .modal {
     margin-top: 1rem;
@@ -1441,6 +1445,9 @@ a.btn {
   .intro-title__text {
     font-size: 2rem;
     line-height: 38px;
+  }
+  .promo {
+    height: 200px;
   }
   .desc-block {
     max-width: 300px;
