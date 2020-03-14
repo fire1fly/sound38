@@ -16,6 +16,8 @@
     width: 700px
     transform: translateX(-90px)
 @media ( max-width: 991px )
+  .promo
+    width: 640px
   .desc
     &-row
       &_height
@@ -108,9 +110,15 @@
           transform: translateX(0px)
         &:hover .modalMenu-wrapList__borderBottom
           transform: translateX(-50px)
+  .promo
+    width: 500px
   .portfolio
     &-block
       height: 1000px
+  .equip
+    &-gallery
+      &__item
+        width: 50%
   .about
     &-card
       flex-direction: column
@@ -157,6 +165,8 @@
         line-height: 50px
     &-arrowDown-fromContent
       top: -50px
+  .promo
+    width: 90%
   .modal
     margin-top: 1rem
     width: 420px
@@ -204,6 +214,8 @@
         text-align: center
   .equip
     display: block
+    &-gallery
+      display: none
   .modal
     width: 300px
     height: auto

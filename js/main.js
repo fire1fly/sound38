@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
     },
     autoplay: {
-      delay: 5000,
+      delay: 10000,
       disableOnInteraction: false,
     },
   });

@@ -287,6 +287,11 @@ body::-webkit-scrollbar {
   outline: none;
 }
 
+.promo {
+  margin: 3rem auto;
+  width: 850px;
+}
+
 .content {
   position: relative;
   padding-top: 50px;
@@ -419,7 +424,7 @@ body::-webkit-scrollbar {
 .desc-block__text_right {
   max-width: 500px;
   font-size: 1.6rem;
-  font-family: georgia,serif;
+  font-family: serif;
   font-style: italic;
 }
 
@@ -924,6 +929,27 @@ a.btn {
   line-height: 30px;
 }
 
+.equip__gallery {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.equip-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.equip-gallery__item {
+  width: 25%;
+}
+
+.equip-gallery__img {
+  width: 100%;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1130,6 +1156,9 @@ a.btn {
 }
 
 @media (max-width: 991px) {
+  .promo {
+    width: 640px;
+  }
   .desc-row_height {
     height: 200px;
   }
@@ -1259,8 +1288,14 @@ a.btn {
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
   }
+  .promo {
+    width: 500px;
+  }
   .portfolio-block {
     height: 1000px;
+  }
+  .equip-gallery__item {
+    width: 50%;
   }
   .about-card {
     -webkit-box-orient: vertical;
@@ -1321,6 +1356,9 @@ a.btn {
   .intro-arrowDown-fromContent {
     top: -50px;
   }
+  .promo {
+    width: 90%;
+  }
   .modal {
     margin-top: 1rem;
     width: 420px;
@@ -1379,6 +1417,9 @@ a.btn {
   }
   .equip {
     display: block;
+  }
+  .equip-gallery {
+    display: none;
   }
   .modal {
     width: 300px;
